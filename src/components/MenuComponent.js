@@ -63,11 +63,11 @@ import Dishdetail from './DishdetailComponent';
                         <div className="row">
                             {menu}
                         </div>
-                        <div className="row">
-                            <div  className="col-12 col-md-5 m-1">
-                                <Dishdetail dish={this.state.selectedDish}/>
-                            </div>
-                        </div>
+                        
+                                
+                        <Dishdetail dish={this.state.selectedDish}/>
+                            
+                        
                     </div>
                 );
             
