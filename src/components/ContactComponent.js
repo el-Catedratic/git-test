@@ -18,12 +18,15 @@ class Contact extends Component{
                 lastname: false,
                 telnum: false,
                 email: false
-            }
+            },
+            
         };
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleBlur = this.handleBlur.bind(this);
+       
     }
+
     handleBlur = (field) => (evt) => {
         this.setState({
             touched: { ...this.state.touched, [field]: true }
